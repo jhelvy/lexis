@@ -2,10 +2,9 @@
 title: "jslides"
 subtitle: "A xaringan theme"
 author: "John Helveston"
-date: "<br><br>2020-05-04, Updated: `r Sys.Date()`"
 output:
   xaringan::moon_reader:
-    css: ['default', 'https://jhelvy.github.io/jslides/jslides.css']
+    css: ['default', 'https://raw.githubusercontent.com/jhelvy/jslides/master/jslides.css']
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -31,7 +30,7 @@ knitr::opts_chunk$set(
 
 layout: true
   
-<div class="footer-small"><span>jhelvy.github.io/slides/</span></div>
+<div class="footer-small"><span>https://github.com/jhelvy/jslides</span></div>
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
@@ -39,9 +38,11 @@ layout: true
 name: title-slide 
 class: title-slide, center, middle, inverse
 
-# Title 
+# jslides: a xaringan theme
 
-.large[John Paul Helveston | November 18, 2019]
+.large[by John Paul Helveston]
+
+<br><br>2020-05-04, Updated: `r Sys.Date()`
 
 .footer-large[
 .right[
