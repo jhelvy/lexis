@@ -21,13 +21,13 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 /* Colors */
 
 :root {
-  --color-blue: #1E90FF; /* dodger blue */
+  --color-blue: #1E90FF;   /* dodger blue */
   --color-orange: #FF9966; /* orange */
-  --color-green: #8FC977; /* green */
-  --color-red: #E74A2F; /* red */
-  --color-black: #1A1917; /* black */
-  --color-tan: #EAE9EA; /* tan */
-  --color-gray: #696969; /* gray */
+  --color-green: #8FC977;  /* green */
+  --color-red: #E74A2F;    /* red */
+  --color-black: #1A1917;  /* black */
+  --color-tan: #EAE9EA;    /* tan */
+  --color-gray: #696969;   /* gray */
 }
 
 /* Background glow color around main slide container */
