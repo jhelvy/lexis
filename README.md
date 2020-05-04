@@ -7,7 +7,7 @@ package](https://github.com/yihui/xaringan) for making slides. It has a light ta
 
 You can preview a live demo [here](https://jhelvy.github.io/jslides/example/jslides_example.html) (or just watch the gif below).
 
-![](examples/jslides_example.gif)
+<img src="example/jslides_example.gif" width=660>
 
 ### Will you eventually contribute this theme to xaringan directly?
 
