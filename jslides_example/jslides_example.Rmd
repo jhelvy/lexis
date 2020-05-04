@@ -1,0 +1,74 @@
+---
+title: "jslides"
+subtitle: "A xaringan theme"
+author: "John Helveston"
+date: "<br><br>2020-05-04, Updated: `r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    css: ['default', 'https://jhelvy.github.io/jslides/jslides.css']
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
+options(
+    htmltools.dir.version = FALSE,
+    knitr.table.format = "html",
+    knitr.kable.NA = '')
+knitr::opts_chunk$set(
+    warning = FALSE,
+    message = FALSE,
+    # Better figure resolution
+    fig.retina = 3)
+```
+
+layout: true
+  
+<div class="footer-small"><span>jhelvy.github.io/slides/</span></div>
+
+<!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+---
+name: title-slide 
+class: title-slide, center, middle, inverse
+
+# Title 
+
+.large[John Paul Helveston | November 18, 2019]
+
+.footer-large[
+.right[
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
+[`r fa(name = "link", fill = "white")` jhelvy.com](https://jhelvy.com)  
+[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
+]]
+
+---
+# Next slide 
+
+---
+name: final-slide 
+class: title-slide, center, middle, inverse
+
+# Thanks! 
+<br>
+```{r, echo=FALSE, out.width='15%'}
+include_graphics('http://www.box.jhelvy.com/docs/jhelvy.png')
+```
+
+.footer-large[.right[
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
+[`r fa(name = "link", fill = "white")` jhelvy.com](https://jhelvy.com)  
+[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
+]]
