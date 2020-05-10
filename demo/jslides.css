@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
 @import url(https://fonts.googleapis.com/css?family=Muli);
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:600');
 
@@ -100,7 +100,7 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   --color-tan:    #EAE9EA;
   --color-gray:   #696969;
   --font-body:    "Muli",sans-serif;
-  --font-header:  "Cabin",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-header:  "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --font-mono:    Monaco,"Lucida Console",monospace;
   --font-fancy:   "Cormorant Upright",serif;
 }
@@ -126,6 +126,14 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 
 /* ----- FONTS ----- */
 
+.remark-slide-content {
+  font-size: 20pt;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
+}
+
 body {
   font-family: var(--font-body);
   color: #333333;
@@ -143,13 +151,13 @@ h1, h2, h3, {
 .remark-slide-content h1 {
   font-size: 42pt;
 }
-h2 {
+.remark-slide-content h2 {
   font-size: 34pt;
 }
-h3 {
+.remark-slide-content h3 {
   font-size: 27pt;
 }
-h4 {
+.remark-slide-content h4 {
   font-size: 24pt;
   font-weight: bold;
 }
@@ -179,14 +187,6 @@ h4 {
 }
 .gray {
   color: var(--color-gray);
-}
-
-.remark-slide-content {
-  font-size: 22pt;
-  padding-top: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 20px;
 }
 
 .title-slide {
