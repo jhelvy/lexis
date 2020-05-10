@@ -1,33 +1,108 @@
-/*
-Default styling found here:
-https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css
-*/
+@import url(https://fonts.googleapis.com/css?family=Cabin);
+@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:600');
 
-@import url(https://fonts.googleapis.com/css?family=Lato:bold);
-@import url(https://fonts.googleapis.com/css?family=Lato);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:bold);
-@import url(https://fonts.googleapis.com/css?family=Muli:600,700,800);
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400');
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:700');
+/* ----- DEFAULT STYLING ----- */
+/* From here: https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
+
+a, a > code {
+  color: rgb(249, 38, 114);
+  text-decoration: none;
+}
+.footnote {
+  position: absolute;
+  bottom: 3em;
+  padding-right: 4em;
+  font-size: 90%;
+}
+.remark-code-line-highlighted {
+  background-color: #ffff88;
+}
+.inverse {
+  background-color: #272822;
+  color: #d6d6d6;
+  text-shadow: 0 0 20px #333;
+}
+.inverse h1, .inverse h2, .inverse h3 {
+  color: #f3f3f3;
+}
+/* Two-column layout */
+.left-column {
+  color: #777;
+  width: 20%;
+  height: 92%;
+  float: left;
+}
+.left-column h2:last-of-type, .left-column h3:last-child {
+  color: #000;
+}
+.right-column {
+  width: 75%;
+  float: right;
+  padding-top: 1em;
+}
+.pull-left {
+  float: left;
+  width: 47%;
+}
+.pull-right {
+  float: right;
+  width: 47%;
+}
+.pull-right ~ * {
+  clear: both;
+}
+img, video, iframe {
+  max-width: 100%;
+}
+blockquote {
+  border-left: solid 5px lightgray;
+  padding-left: 1em;
+}
+.remark-slide table {
+  margin: auto;
+  border-top: 1px solid #666;
+  border-bottom: 1px solid #666;
+}
+.remark-slide table thead th { border-bottom: 1px solid #ddd; }
+th, td { padding: 5px; }
+.remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) { background: #eee }
+
+@page { margin: 0; }
+@media print {
+  .remark-slide-scaler {
+    width: 100% !important;
+    height: 100% !important;
+    transform: scale(1) !important;
+    top: 0 !important;
+    left: 0 !important;
+  }
+}
 
 /* ----- MAIN STYLING ----- */
 
 /*
-Adapted from Allison Hill's css in this workshop:
+Adapted from and inspired by Allison Hill's css in this workshop:
 https://github.com/rstudio-education/arm-workshop-rsc2019
 */
 
 /* Colors */
 
 :root {
-  --color-blue: #1E90FF;   /* dodger blue */
-  --color-orange: #FF9966; /* orange */
-  --color-green: #8FC977;  /* green */
-  --color-red: #E74A2F;    /* red */
-  --color-black: #1A1917;  /* black */
-  --color-tan: #EAE9EA;    /* tan */
-  --color-gray: #696969;   /* gray */
+  --color-white:  #fff;
+  --color-red:    #E74A2F;
+  --color-orange: #fa7b3c;
+  --color-yellow: #EFB73E;
+  --color-green:  #38B44A;
+  --color-blue:   #007bff;
+  --color-purple: #772953;
+  --color-black:  #1A1917;
+  --color-tan:    #EAE9EA;
+  --color-gray:   #696969;
+  --font-body:    "Muli",sans-serif;
+  --font-header:  "Cabin",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono:    Monaco,"Lucida Console",monospace;
+  --font-fancy:   "Cormorant Upright",serif;
 }
 
 /* Background glow color around main slide container */
@@ -49,36 +124,190 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   background-color: var(--color-tan);
 }
 
+/* ----- FONTS ----- */
+
+body {
+  font-family: var(--font-body);
+  color: #333333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-header);
+  font-weight: 500;
+  line-height: 1.1;
+}
+h1, h2, h3, {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.remark-slide-content h1 {
+  font-size: 42pt;
+}
+h2 {
+  font-size: 34pt;
+}
+h3 {
+  font-size: 27pt;
+}
+h4 {
+  font-size: 24pt;
+  font-weight: bold;
+}
+.white {
+  color: var(--color-white);
+}
 .red {
   color: var(--color-red);
 }
-
 .orange {
   color: var(--color-orange);
 }
-
+.yellow {
+  color: var(--color-yellow);
+}
 .green {
   color: var(--color-green);
 }
-
 .blue {
   color: var(--color-blue);
 }
-
-.redinline {
-  color: var(--color-red);
+.purple {
+  color: var(--color-purple);
+}
+.black {
+  color: var(--color-black);
+}
+.gray {
+  color: var(--color-gray);
 }
 
-.orangeinline {
-  color: var(--color-orange);
+.remark-slide-content {
+  font-size: 22pt;
+  padding-top: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 20px;
 }
 
-.greeninline {
-  color: var(--color-green);
+.title-slide {
+  padding: 0;
 }
 
-.blueinline {
-  color: var(--color-blue);
+li {
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+}
+
+.slimtitle {
+  font-family: var(--font-header);
+  font-weight: 500;
+  font-size: 55px;
+  margin-block-start: 0em;
+  margin-block-end: 0.1em;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: var(--font-mono);
+}
+
+.fancy{
+  font-family: var(--font-fancy);
+  font-weight: 600;
+}
+
+/* Additional font sizes */
+.large {
+  font-size: 160%;
+}
+.code10 .remark-code {
+  font-size: 10%;
+}
+.code20 .remark-code {
+  font-size: 20%;
+}
+.code30 .remark-code {
+  font-size: 30%;
+}
+.code40 .remark-code {
+  font-size: 40%;
+}
+.code50 .remark-code {
+  font-size: 50%;
+}
+.code60 .remark-code {
+  font-size: 60%;
+}
+.code70 .remark-code {
+  font-size: 70%;
+}
+.code80 .remark-code {
+  font-size: 80%;
+}
+.code90 .remark-code {
+  font-size: 90%;
+}
+.code100 .remark-code {
+  font-size: 100%;
+}
+.font10 {
+  font-size: 10%;
+}
+.font20 {
+  font-size: 20%;
+}
+.font30 {
+  font-size: 30%;
+}
+.font40 {
+  font-size: 40%;
+}
+.font50 {
+  font-size: 50%;
+}
+.font60 {
+  font-size: 60%;
+}
+.font70 {
+  font-size: 70%;
+}
+.font80 {
+  font-size: 80%;
+}
+.font90 {
+  font-size: 90%;
+}
+.font100 {
+  font-size: 100%;
+}
+.font110 {
+  font-size: 110%;
+}
+.font120 {
+  font-size: 120%;
+}
+.font130 {
+  font-size: 130%;
+}
+.font140 {
+  font-size: 140%;
+}
+.font150 {
+  font-size: 150%;
+}
+.font160 {
+  font-size: 160%;
+}
+.font170 {
+  font-size: 170%;
+}
+.font180 {
+  font-size: 180%;
+}
+.font190 {
+  font-size: 190%;
+}
+.font200 {
+  font-size: 200%;
 }
 
 /* In line code */
@@ -91,13 +320,15 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 
 /* Color of inline code, i.e. `code` */
 .remark-inline-code {
-  color: var(--color-blue);
-  background-color: rgb(220,220,220);
+  color: var(--color-gray);
+  background-color: transparent;
+  font-size: 18pt;
   border-radius: 5px; /* Rounded edges */
 }
 .inverse .remark-inline-code {
   color: var(--color-orange);
   background-color: transparent;
+  font-size: 18pt;
 }
 
 /* Code chunk colors */
@@ -133,16 +364,13 @@ pre {
 
 /* Links */
 
-a,
-a:visited {
-  color: var(--color-black);
-  border-bottom: 1px solid var(--color-blue);
-  box-shadow: inset 0 -2px 0 var(--color-blue);
+a, a:visited {
+  color: var(--color-blue);
+  border-bottom: none;
 }
 
-a:hover,
-a:focus {
-  color: var(--color-black);
+a:hover, a:focus {
+  color: var(--color-purple);
   background: rgba(97, 172, 240, .5);
   border-bottom: none;
 }
@@ -152,8 +380,13 @@ a > code {
   text-decoration: none;
 }
 
-.inverse a {
-  color: #FFF;
+.inverse a, .inverse a:visited {
+  color: var(--color-white);
+  text-decoration: underline;
+}
+
+.inverse a:hover, a:focus {
+  color: var(--color-blue);
 }
 
 /* Footer */
@@ -164,6 +397,7 @@ div.footer-large {
   right: 50px;
   height: 100px;
   width: 100%;
+  margin-bottom: 25px;
 }
 
 div.footer-small {
@@ -177,7 +411,7 @@ div.footer-small {
 
 div.footer-small span {
   font-size: 10pt;
-  color: #F7F8FA;
+  color: var(--color-white);
   position: absolute;
   left: 15px;
   bottom: 2px;
@@ -204,7 +438,6 @@ div.footer-small span {
 }
 
 /* Add image border by default */
-
 img {
   display: block;
   border: 1px solid #000;
@@ -285,8 +518,15 @@ img {
   grid-column: 3 / 4;
 }
 
-/* 2 columns */
+/* 3  columns */
+.cols3 {
+  float: left;
+  width: 32%;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 
+/* 2 columns */
 .cols2 {
   float: left;
   width: 49%;
@@ -396,23 +636,11 @@ img {
   width: 79%;
 }
 
-/* 3  columns */
-.cols3 {
-  float: left;
-  width: 32%;
-  margin-left: 5px;
-  margin-right: 5px;
-}
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
-.title-slide .remark-slide-number {
-  display: none;
 }
 
 /* Table Row Highlighting */
@@ -442,159 +670,11 @@ img {
   background: transparent;
 }
 
-/* ----- FONTS ----- */
-
-body {
-    font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #333333;
+/* turns off slide numbers for title page: https://github.com/gnab/remark/issues/298 */
+.title-slide .remark-slide-number {
+  display: none;
 }
 
-.large {
-  font-size: 160%;
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  line-height: 1.1;
-}
-
-h1, .h1, h2, .h2, h3, .h3 {
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-h1 {
-    font-size: 38px;
-}
-
-h2 {
-    font-size: 30px;
-}
-
-.remark-slide-content {
-  font-size: 23px;
-  padding-top: 20px;
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 20px;
-}
-
-.title-slide {
-  padding: 0;
-}
-
-li {
-  margin-block-start: 0.5em;
-  margin-block-end: 0.5em;
-}
-
-.slimtitle {
-  font-family: "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  font-weight: 500;
-  font-size: 55px;
-  margin-block-start: 0em;
-  margin-block-end: 0.1em;
-}
-
-.remark-code, .remark-inline-code {
-  font-family: Monaco, 'Inconsolata', 'Lucida Console', monospace;
-}
-
-.fancy{
-  font-family: 'Cormorant Upright', serif;
-  font-weight: 700;
-}
-
-/* Additional font sizes */
-
-.code10 .remark-code {
-  font-size: 10%;
-}
-.code20 .remark-code {
-  font-size: 20%;
-}
-.code30 .remark-code {
-  font-size: 30%;
-}
-.code40 .remark-code {
-  font-size: 40%;
-}
-.code50 .remark-code {
-  font-size: 50%;
-}
-.code60 .remark-code {
-  font-size: 60%;
-}
-.code70 .remark-code {
-  font-size: 70%;
-}
-.code80 .remark-code {
-  font-size: 80%;
-}
-.code90 .remark-code {
-  font-size: 90%;
-}
-.code100 .remark-code {
-  font-size: 100%;
-}
-.font10 {
-  font-size: 10%;
-}
-.font20 {
-  font-size: 20%;
-}
-.font30 {
-  font-size: 30%;
-}
-.font40 {
-  font-size: 40%;
-}
-.font50 {
-  font-size: 50%;
-}
-.font60 {
-  font-size: 60%;
-}
-.font70 {
-  font-size: 70%;
-}
-.font80 {
-  font-size: 80%;
-}
-.font90 {
-  font-size: 90%;
-}
-.font100 {
-  font-size: 100%;
-}
-.font110 {
-  font-size: 110%;
-}
-.font120 {
-  font-size: 120%;
-}
-.font130 {
-  font-size: 130%;
-}
-.font140 {
-  font-size: 140%;
-}
-.font150 {
-  font-size: 150%;
-}
-.font160 {
-  font-size: 160%;
-}
-.font170 {
-  font-size: 170%;
-}
-.font180 {
-  font-size: 180%;
-}
-.font190 {
-  font-size: 190%;
-}
-.font200 {
-  font-size: 200%;
+.no-slide-number .remark-slide-number {
+  display: none;
 }

@@ -4,7 +4,7 @@ subtitle: "A xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: ['default', 'jslides.css']
+    css: 'jslides.css'
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -26,13 +26,19 @@ knitr::opts_chunk$set(
     message = FALSE,
     # Better figure resolution
     fig.retina = 3)
+dateWritten <- format(as.Date('2020-05-04'), format="%B %d %Y")
+today <- format(Sys.Date(), format="%B %d %Y")
 ```
 
 layout: true
 
-<div class="footer-small"><span>https://github.com/jhelvy/jslides</span></div>
-
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
+
+<div class="footer-small">
+<span>
+https://github.com/jhelvy/jslides
+</span>
+</div>
 
 ---
 name: title-slide 
@@ -42,22 +48,16 @@ class: title-slide, center, middle, inverse
 
 .large[by John Paul Helveston]
 
-<br>Written: 2020-05-04<br><br>Updated: `r Sys.Date()`<br><br>
+Written: `r dateWritten`
 
-.footer-large[
-.right[
-[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
-[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
-[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
-[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)  
-[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
-]]
+Updated: `r today`
 
 ---
+
 # .center[Styling]
 
 .leftcol[
-# Header level 1 xaringan
+# Header level 1 
 
 ## Header level 2
 
@@ -65,9 +65,14 @@ class: title-slide, center, middle, inverse
 
 #### Header level 4
 
-Default text 
 ]
 .rightcol[
+Regular text 
+
+_Italics text_
+
+**Bold text**
+
 [external link](https://github.com/jhelvy/jslides)
 
 `Inline code`
@@ -81,10 +86,10 @@ chunk_input
 ---
 class: inverse 
 
-# .center[Invserse styling]
+# .center[Inverse styling]
 
 .leftcol[
-# Header level 1
+# Header level 1 
 
 ## Header level 2
 
@@ -92,9 +97,14 @@ class: inverse
 
 #### Header level 4
 
-Default text 
 ]
 .rightcol[
+Regular text 
+
+_Italics text_
+
+**Bold text**
+
 [external link](https://github.com/jhelvy/jslides)
 
 `Inline code`
@@ -106,126 +116,170 @@ chunk_input
 ]
 
 ---
-# Fun colors
-
 .leftcol40[
-```{r, eval=FALSE}
-.blue[text]
-.orange[text]
-.green[text]
-.red[text]
-.black[text]
+# Colors!
 ```
-.blue[text]
+## .red[text]
+## .orange[text]
+## .yellow[text]
+## .green[text]
+## .blue[text]
+## .purple[text]
+## .black[text]
+```
+]
+.rightcol45[
+## .red[text]
+## .orange[text]
+## .yellow[text]
+## .green[text]
+## .blue[text]
+## .purple[text]
+## .black[text]
+]
 
-.orange[text]
+---
 
-.green[text]
+## .center[Three equal columns]
 
-.red[text]
+.cols3[
+`.cols3[]`
 
-.black[text]
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.cols3[
+`.cols3[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.cols3[
+`.cols3[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+
+---
+
+## .center[Two equal columns]
+
+.leftcol[
+`.cols2[]` or `.leftcol[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.rightcol[
+`.cols2[]` or `.rightcol[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+
+---
+
+## .center[Two columns: 60-40 split]
+
+.leftcol60[
+`.leftcol60[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.rightcol40[
+`.rightcol40[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+
+---
+
+## .center[Two columns: 70-30 split]
+
+.leftcol70[
+`.leftcol70[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.rightcol30[
+`.rightcol30[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+
+---
+
+## .center[Two columns: 80-20 split]
+
+.leftcol80[
+`.leftcol80[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+.rightcol20[
+`.rightcol20[]`
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+]
+
+---
+
+## .center[Supported two-column split percentages]
+
+.leftcol[
+50-50: `.leftcol[] .rightcol[]`
+
+55-45: `.leftcol55[] .rightcol45[]`
+
+60-40: `.leftcol60[] .rightcol40[]`
+
+65-35: `.leftcol65[] .rightcol35[]`
+
+70-30: `.leftcol70[] .rightcol30[]`
+
+75-25: `.leftcol75[] .rightcol25[]`
+
+80-20: `.leftcol80[] .rightcol20[]`
+]
+.rightcol[
+<br>
+
+45-55: `.leftcol45[] .rightcol55[]`
+
+40-60: `.leftcol40[] .rightcol60[]`
+
+35-65: `.leftcol35[] .rightcol65[]`
+
+30-70: `.leftcol30[] .rightcol70[]`
+
+25-75: `.leftcol25[] .rightcol75[]`
+
+20-80: `.leftcol20[] .rightcol80[]`
 ]
 
 ---
 class: center
+background-image: url("images/blue_ridge_mountains.jpg")
 
-# Many options for split panes
+# .fancy[Full image background]
+
+---
+
+# .center[Images]
 
 .leftcol[
-# 50-50 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-.rightcol[
-# 50-50 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
 
----
-class: center 
-
-# Many options for split panes
-
-.leftcol60[
-# 60-40 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-.rightcol40[
-# 60-40 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-
----
-class: center 
-
-# Many options for split panes
-
-.leftcol70[
-# 70-30 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-.rightcol30[
-# 70-30 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-
----
-class: center 
-
-# Many options for split panes
-
-.leftcol80[
-# 80-20 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-.rightcol20[
-# 80-20 split
-.left[
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-]]
-
----
-class: center 
-
-# Many options for split panes
-
-.leftcol[.left[
-For 50-50 split panes, use:
-```
-.leftcol[
 ]
 .rightcol[
-]
-```
 
-For all other splits, use:
-```
-.leftcol#[
 ]
-.rightcol#[
-]
-```
+
+---
+class: center, middle, inverse, no-slide-number
+
+# Thanks!
+
+.footer-large[
+.right[
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
+[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)  
+[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
 ]]
-.rightcol[.left[
-Supported percentage splits:
-```
-.leftcol55[] .rightcol45[]
-.leftcol60[] .rightcol40[]
-.leftcol65[] .rightcol35[]
-.leftcol70[] .rightcol30[]
-.leftcol75[] .rightcol25[]
-.leftcol80[] .rightcol20[]
-```
-
-Opposite splits are also supported 
-
-(e.g. `.leftcol40[] .rightcol60[]`)
-]]
-
