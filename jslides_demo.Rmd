@@ -261,13 +261,42 @@ background-image: url("images/blue_ridge_mountains.jpg")
 
 ---
 
-# .center[Images]
+# .center[Images have a thin border by default]
 
 .leftcol[
-
+This code produces the image on the right:
+```{r, eval=FALSE}
+<center>
+<img src="images/prof_x.gif" width="400">
+</center>
+```
 ]
 .rightcol[
+<center>
+<img src="images/prof_x.gif" width="400">
+</center>
+]
 
+---
+
+# Remove the border with .code100[`.noborder[]`]
+
+.leftcol[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.noborder[ #<<
+<center>
+<img src="images/prof_x.gif" width="400">
+</center>
+] #<<
+```
+]
+.rightcol[
+.noborder[
+<center>
+<img src="images/prof_x.gif" width="400">
+</center>
+]
 ]
 
 ---

@@ -1,7 +1,4 @@
 ---
-title: "jslides: a xaringan theme"
-author: "<br>by John Helveston"
-date: "<br>Written: 2020-05-04<br><br>Updated: `r Sys.Date()`<br><br>"
 output:
     html_document:
         theme: united

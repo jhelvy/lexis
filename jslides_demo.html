@@ -4,7 +4,7 @@
     <title>jslides</title>
     <meta charset="utf-8" />
     <meta name="author" content="John Helveston" />
-    <link rel="stylesheet" href="jslides.css" type="text/css" />
+    <link rel="stylesheet" href="https://jhelvy.github.io/jslides/jslides.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -253,13 +253,44 @@ background-image: url("images/blue_ridge_mountains.jpg")
 
 ---
 
-# .center[Images]
+# .center[Images have a thin border by default]
 
 .leftcol[
+This code produces the image on the right:
 
+```r
+&lt;center&gt;
+&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;/center&gt;
+```
 ]
 .rightcol[
+&lt;center&gt;
+&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;/center&gt;
+]
 
+---
+
+# Remove the border with .code100[`.noborder[]`]
+
+.leftcol[
+This code produces the image on the right:
+
+```r
+*.noborder[
+&lt;center&gt;
+&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
+]
+.rightcol[
+.noborder[
+&lt;center&gt;
+&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;/center&gt;
+]
 ]
 
 ---
