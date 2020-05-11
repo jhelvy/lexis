@@ -4,7 +4,7 @@
     <title>jslides</title>
     <meta charset="utf-8" />
     <meta name="author" content="John Helveston" />
-    <link rel="stylesheet" href="https://jhelvy.github.io/jslides/jslides.css" type="text/css" />
+    <link rel="stylesheet" href="jslides.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
@@ -32,7 +32,7 @@ class: title-slide, center, middle, inverse
 
 Written: May 04 2020
 
-Updated: May 10 2020
+Updated: May 11 2020
 
 ---
 
@@ -251,47 +251,214 @@ background-image: url("images/blue_ridge_mountains.jpg")
 
 # .fancy[Full image background]
 
+.left[
+
+```r
+class: center
+background-image: url("images/blue_ridge_mountains.jpg")
+```
+]
+
 ---
 
-# .center[Images have a thin border by default]
+# Images have a thin border by default
 
-.leftcol[
+.leftcol60[
 This code produces the image on the right:
 
 ```r
 &lt;center&gt;
-&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
 &lt;/center&gt;
 ```
 ]
-.rightcol[
+.rightcol40[
 &lt;center&gt;
-&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
 &lt;/center&gt;
 ]
 
 ---
 
-# Remove the border with .code100[`.noborder[]`]
+# Remove the border with `.noborder[]`
 
-.leftcol[
+.leftcol60[
 This code produces the image on the right:
 
 ```r
 *.noborder[
 &lt;center&gt;
-&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
 &lt;/center&gt;
 *] 
 ```
 ]
-.rightcol[
-.noborder[
+.rightcol40[.noborder[
 &lt;center&gt;
-&lt;img src="images/prof_x.gif" width="400"&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
 &lt;/center&gt;
+]]
+
+---
+
+# Or modify the border: `.borderthick[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.borderthick[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
 ]
+.rightcol40[.borderthick[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+class: inverse
+
+# Or modify the border: `.whiteborder[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.whiteborder[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
 ]
+.rightcol40[.whiteborder[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+class: inverse
+
+## Or modify the border: `.whiteborderthick[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.whiteborderthick[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
+]
+.rightcol40[.whiteborderthick[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+
+# Change the image look: `.polaroid[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.polaroid[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
+]
+.rightcol40[.polaroid[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+
+# Change the image look: `.circle[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.circle[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
+]
+.rightcol40[.circle[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+
+# Change the image look: `.lil[]`
+
+.leftcol60[
+This code produces the image on the right:
+
+```r
+*.lil[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+*] 
+```
+]
+.rightcol40[.lil[
+&lt;center&gt;
+&lt;img src="images/blue_ridge_sunset.jpg" width="400"&gt;
+&lt;/center&gt;
+]]
+
+---
+
+# Image classes work on rendered charts too
+
+.leftcol[
+````markdown
+.noborder[
+```{r}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]
+````
+.noborder[
+&lt;img src="jslides_demo_files/figure-html/unnamed-chunk-12-1.png" width="288" /&gt;
+]]
+.rightcol[
+````markdown
+.circle[
+```{r}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]
+````
+.circle[
+&lt;img src="jslides_demo_files/figure-html/unnamed-chunk-13-1.png" width="288" /&gt;
+]]
 
 ---
 class: center, middle, inverse, no-slide-number

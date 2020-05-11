@@ -1,5 +1,5 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu);
-@import url(https://fonts.googleapis.com/css?family=Muli);
+@import url(https://fonts.googleapis.com/css?family=Overpass);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed);
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:600');
 
 /* ----- DEFAULT STYLING ----- */
@@ -99,9 +99,9 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   --color-black:  #1A1917;
   --color-gray-light: #EAE9EA;
   --color-gray:   #696969;
-  --font-body:    "Muli",sans-serif;
-  --font-header:  "Ubuntu",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-mono:    Monaco,"Lucida Console",monospace;
+  --font-body:    "Overpass", sans-serif;
+  --font-header:  "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono:    SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
   --font-fancy:   "Cormorant Upright",serif;
 }
 
@@ -322,13 +322,11 @@ li {
 .remark-inline-code {
   color: var(--color-gray);
   background-color: transparent;
-  font-size: 18pt;
   border-radius: 5px; /* Rounded edges */
 }
 .inverse .remark-inline-code {
   color: var(--color-orange);
   background-color: transparent;
-  font-size: 18pt;
 }
 
 /* Code chunk colors */

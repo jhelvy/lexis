@@ -4,7 +4,7 @@ subtitle: "A xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: 'https://jhelvy.github.io/jslides/jslides.css'
+    css: 'jslides.css'
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -16,6 +16,7 @@ output:
 
 ```{r setup, include=FALSE}
 library(knitr)
+library(ggplot2)
 library(fontawesome) # from github: https://github.com/rstudio/fontawesome
 options(
     htmltools.dir.version = FALSE,
@@ -259,45 +260,215 @@ background-image: url("images/blue_ridge_mountains.jpg")
 
 # .fancy[Full image background]
 
+.left[
+```{r, eval=FALSE}
+class: center
+background-image: url("images/blue_ridge_mountains.jpg")
+```
+]
+
 ---
 
-# .center[Images have a thin border by default]
+# Images have a thin border by default
 
-.leftcol[
+.leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 <center>
-<img src="images/prof_x.gif" width="400">
+<img src="images/blue_ridge_sunset.jpg" width="400">
 </center>
 ```
 ]
-.rightcol[
+.rightcol40[
 <center>
-<img src="images/prof_x.gif" width="400">
+<img src="images/blue_ridge_sunset.jpg" width="400">
 </center>
 ]
 
 ---
 
-# Remove the border with .code100[`.noborder[]`]
+# Remove the border with `.noborder[]`
 
-.leftcol[
+.leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .noborder[ #<<
 <center>
-<img src="images/prof_x.gif" width="400">
+<img src="images/blue_ridge_sunset.jpg" width="400">
 </center>
 ] #<<
 ```
 ]
-.rightcol[
-.noborder[
+.rightcol40[.noborder[
 <center>
-<img src="images/prof_x.gif" width="400">
+<img src="images/blue_ridge_sunset.jpg" width="400">
 </center>
+]]
+
+---
+
+# Or modify the border: `.borderthick[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.borderthick[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
 ]
+.rightcol40[.borderthick[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+class: inverse
+
+# Or modify the border: `.whiteborder[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.whiteborder[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
 ]
+.rightcol40[.whiteborder[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+class: inverse
+
+## Or modify the border: `.whiteborderthick[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.whiteborderthick[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
+]
+.rightcol40[.whiteborderthick[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+
+# Change the image look: `.polaroid[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.polaroid[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
+]
+.rightcol40[.polaroid[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+
+# Change the image look: `.circle[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.circle[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
+]
+.rightcol40[.circle[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+
+# Change the image look: `.lil[]`
+
+.leftcol60[
+This code produces the image on the right:
+```{r, eval=FALSE}
+.lil[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+] #<<
+```
+]
+.rightcol40[.lil[
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
+]]
+
+---
+
+# Image classes work on rendered charts too
+
+.leftcol[
+````markdown
+.noborder[
+`r ''````{r}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]
+````
+.noborder[
+```{r, echo=FALSE, fig.width=4, fig.height=3}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]]
+.rightcol[
+````markdown
+.circle[
+`r ''````{r}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]
+````
+.circle[
+```{r, echo=FALSE, fig.width=4, fig.height=3}
+ggplot(mtcars, aes(x = mpg, y = hp)) +
+    geom_point() +
+    theme_bw() +
+    labs(color = 'Cylinders')
+```
+]]
 
 ---
 class: center, middle, inverse, no-slide-number
