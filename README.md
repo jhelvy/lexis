@@ -25,7 +25,7 @@ workshop](https://github.com/rstudio-education/arm-workshop-rsc2019).
 
 ### Demo
 
-  - [<i class="fas fa-file-pdf"></i>
+  - [<i class="fas fa-ad"></i>
     Preview](https://jhelvy.github.io/lexis/lexis_demo.html) a live
     demo.
   - [View](https://jhelvy.github.io/lexis/lexis_demo.pdf) the live demo
@@ -37,12 +37,9 @@ workshop](https://github.com/rstudio-education/arm-workshop-rsc2019).
 
 ### How can I use this theme?
 
-If you’d like to use this theme, simply include the css in the YAML for
-your xaringan slides (see example below). You technically only need the
-line defining the css, but I put my full usual header here which also
-adjusts the aspect ratio and highlighting styles that I prefer. The
-`seal: false` bit drops the defaul title page - I like to make my own,
-like I show in my [demo
+If you’d like to use this theme, include the following in the YAML for
+your xaringan slides. The `seal: false` bit drops the defaul title page
+- I like to make my own, like I show in my [demo
 slides](https://jhelvy.github.io/lexis/lexis_demo.html).
 
     ---

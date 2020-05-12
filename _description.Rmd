@@ -24,15 +24,15 @@ package](https://github.com/yihui/xaringan) for making slides. It has a light gr
 
 ### Demo
 
-- [<i class="fas fa-file-pdf"></i> Preview](https://jhelvy.github.io/lexis/lexis_demo.html) a live demo.
-- [View](https://jhelvy.github.io/lexis/lexis_demo.pdf) the live demo slides as a pdf.
-- [Download](https://jhelvy.github.io/lexis/lexis_demo.zip) the files to create the demo.
+- [<i class="fas fa-ad"></i>  Preview](https://jhelvy.github.io/lexis/lexis_demo.html){target="_blank"} a live demo.
+- [View](https://jhelvy.github.io/lexis/lexis_demo.pdf){target="_blank"} the live demo slides as a pdf.
+- [Download](https://jhelvy.github.io/lexis/lexis_demo.zip){target="_blank"} the files to create the demo.
 
 <img src="images/lexis_demo.gif" width=660>
 
 ### How can I use this theme?
 
-If you'd like to use this theme, simply include the css in the YAML for your xaringan slides (see example below). You technically only need the line defining the css, but I put my full usual header here which also adjusts the aspect ratio and highlighting styles that I prefer. The `seal: false` bit drops the defaul title page - I like to make my own, like I show in my [demo slides](https://jhelvy.github.io/lexis/lexis_demo.html).
+If you'd like to use this theme, include the following in the YAML for your xaringan slides. The `seal: false` bit drops the defaul title page - I like to make my own, like I show in my [demo slides](https://jhelvy.github.io/lexis/lexis_demo.html){target="_blank"}.
 
 ```
 ---
