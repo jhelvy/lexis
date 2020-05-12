@@ -5,6 +5,7 @@ output: github_document
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 ```{r, include = FALSE}
+library(fontawesome) # from github: https://github.com/rstudio/fontawesome
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -24,15 +25,15 @@ package](https://github.com/yihui/xaringan) for making slides. It has a light gr
 
 ### Demo
 
-- [<i class="fas fa-ad"></i>  Preview](https://jhelvy.github.io/lexis/lexis_demo.html){target="_blank"} a live demo.
-- [View](https://jhelvy.github.io/lexis/lexis_demo.pdf){target="_blank"} the live demo slides as a pdf.
-- [Download](https://jhelvy.github.io/lexis/lexis_demo.zip){target="_blank"} the files to create the demo.
+- [`r fa("external-link-square-alt", fill = "#007bff")` Preview](https://jhelvy.github.io/lexis/lexis_demo.html){target="_blank"} a live demo.
+- [`r fa("external-link-square-alt", fill = "#007bff")` View](https://jhelvy.github.io/lexis/lexis_demo.pdf){target="_blank"} the live demo slides as a pdf.
+- [`r fa("download", fill = "#007bff")` Download](https://jhelvy.github.io/lexis/lexis_demo.zip){target="_blank"} the files to create the demo.
 
 <img src="images/lexis_demo.gif" width=660>
 
 ### How can I use this theme?
 
-If you'd like to use this theme, include the following in the YAML for your xaringan slides. The `seal: false` bit drops the defaul title page - I like to make my own, like I show in my [demo slides](https://jhelvy.github.io/lexis/lexis_demo.html){target="_blank"}.
+If you'd like to use this theme, include the following in the YAML for your xaringan slides (the `seal: false` bit drops the defaul title page - I like to make my own, like I show in my [demo slides](https://jhelvy.github.io/lexis/lexis_demo.html)).
 
 ```
 ---
