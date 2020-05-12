@@ -1,13 +1,13 @@
 ---
-title: "jslides"
-subtitle: "A xaringan theme"
+title: "λέξις"
+subtitle: "a xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: 'jslides.css'
+    css: 'lexis.css'
     lib_dir: libs
     nature:
-      highlightStyle: github
+      highlightStyle: tango
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
@@ -31,21 +31,27 @@ dateWritten <- format(as.Date('2020-05-04'), format="%B %d %Y")
 today <- format(Sys.Date(), format="%B %d %Y")
 ```
 
+```{r xaringan-tile-view, echo=FALSE}
+# Enables the ability to show all slides in a tile overview by pressing "o"
+# devtools::install_github("gadenbuie/xaringanExtra")
+# xaringanExtra::use_tile_view()
+```
+
 layout: true
 
 <!-- this adds the link footer to all slides, depends on my-footer class in css-->
 
 <div class="footer-small">
 <span>
-https://github.com/jhelvy/jslides
+https://github.com/jhelvy/lexis
 </span>
 </div>
 
 ---
-name: title-slide 
+name: title-slide
 class: title-slide, center, middle, inverse
 
-# jslides: a xaringan theme
+# λέξις: a xaringan theme
 
 .large[by John Paul Helveston]
 
@@ -58,7 +64,7 @@ Updated: `r today`
 # .center[Styling]
 
 .leftcol[
-# Header level 1 
+# Header level 1
 
 ## Header level 2
 
@@ -68,13 +74,13 @@ Updated: `r today`
 
 ]
 .rightcol[
-Regular text 
+Regular text
 
 _Italics text_
 
 **Bold text**
 
-[external link](https://github.com/jhelvy/jslides)
+[external link](https://github.com/jhelvy/lexis)
 
 `Inline code`
 
@@ -85,12 +91,12 @@ chunk_input
 ]
 
 ---
-class: inverse 
+class: inverse
 
 # .center[Inverse styling]
 
 .leftcol[
-# Header level 1 
+# Header level 1
 
 ## Header level 2
 
@@ -100,13 +106,13 @@ class: inverse
 
 ]
 .rightcol[
-Regular text 
+Regular text
 
 _Italics text_
 
 **Bold text**
 
-[external link](https://github.com/jhelvy/jslides)
+[external link](https://github.com/jhelvy/lexis)
 
 `Inline code`
 
@@ -253,6 +259,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 20-80: `.leftcol20[] .rightcol80[]`
 ]
+
+---
+
+<center>
+.wrapper[
+.top-left[
+Here's some text in the top-left corner
+]
+.top-right[
+Here's some text in the top-right corner
+]
+.bottom-left[
+Here's some text in the bottom-left corner
+]
+.bottom-right[
+Here's some text in the bottom-right corner
+]
+]
+</center>
 
 ---
 class: center
@@ -477,9 +502,9 @@ class: center, middle, inverse, no-slide-number
 
 .footer-large[
 .right[
-[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
-[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
-[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
-[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)  
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)
+[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)
 [`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
 ]]

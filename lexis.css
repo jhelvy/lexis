@@ -314,8 +314,7 @@ li {
 
 /* Background color for highlighted code */
 .remark-code-line-highlighted {
-  /*background-color: rgba(253, 255, 50, .5);*/
-  background-color: rgb(206, 233, 255);
+  background-color: rgb(206, 233, 255);  /*light blue*/
 }
 
 /* Color of inline code, i.e. `code` */
@@ -336,7 +335,7 @@ li {
   border: 1px solid #000;
 }
 
-/* Code block output colors */
+/* Code chunk output */
 .remark-code {
   display: block;
   overflow-x: auto;

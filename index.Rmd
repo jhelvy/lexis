@@ -12,6 +12,17 @@ knitr::opts_chunk$set(
     message = FALSE)
 ```
 
+<style>
+@import url(https://fonts.googleapis.com/css?family=Overpass);
+@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed);
+body {
+  font-family: "Overpass", sans-serif;
+}
+h1, h2, h3 {
+  font-family: "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+</style>
+
 <!-- Styling to insert the little github logo in the corner, from here: -->
 <!-- https://github.com/tholman/github-corners -->
 
