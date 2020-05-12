@@ -28,4 +28,3 @@ zip::zip('lexis_demo.zip', c(
 # Render the description pages
 rmarkdown::render(input = 'README.Rmd', output_format = 'github_document')
 rmarkdown::render(input = 'index.Rmd')
-

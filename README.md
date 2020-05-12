@@ -45,20 +45,22 @@ your xaringan slides (the `seal: false` bit drops the defaul title page
 - I like to make my own, like I show in my [demo
 slides](https://jhelvy.github.io/lexis/lexis_demo.html)).
 
-    ---
-    title: "Title"
-    author: "Author"
-    output:
-      xaringan::moon_reader:
-        css: 'https://jhelvy.github.io/lexis/lexis.css'
-        lib_dir: libs
-        nature:
-          highlightStyle: github
-          highlightLines: true
-          countIncrementalSlides: false
-          ratio: "16:9"
-        seal: false
-    ---
+``` markdown
+---
+title: "Title"
+author: "Author"
+output:
+  xaringan::moon_reader:
+    css: 'https://jhelvy.github.io/lexis/lexis.css'
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+    seal: false
+---
+```
 
 ### What does “λέξις” mean?
 
