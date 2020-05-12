@@ -41,8 +41,8 @@ workshop](https://github.com/rstudio-education/arm-workshop-rsc2019).
 ### How can I use this theme?
 
 If you’d like to use this theme, include the following in the YAML for
-your xaringan slides (the `seal: false` bit drops the defaul title page
-- I like to make my own, like I show in my [demo
+your xaringan slides (the `seal: false` bit drops the defaul title page,
+I like to make my own, like I show in my [demo
 slides](https://jhelvy.github.io/lexis/lexis_demo.html)).
 
 ``` markdown
