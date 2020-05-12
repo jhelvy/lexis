@@ -144,10 +144,16 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   line-height: 1.1;
 }
+
 h1, h2, h3, {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+.fira {
+  font-family: var(--font-header);
+}
+
 .remark-slide-content h1 {
   font-size: 42pt;
 }
@@ -390,11 +396,11 @@ a > code {
 
 div.footer-large {
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   right: 50px;
   height: 100px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
 }
 
 div.footer-small {

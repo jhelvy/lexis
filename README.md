@@ -3,6 +3,8 @@
 
 # λέξις: a xaringan theme
 
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
 ## by John Paul Helveston
 
 Written: May 04 2020
@@ -23,10 +25,13 @@ workshop](https://github.com/rstudio-education/arm-workshop-rsc2019).
 
 ### Demo
 
-You can preview a live demo
-[here](https://jhelvy.github.io/lexis/lexis_demo.html), and you can
-download the files to create that demo
-[here](https://jhelvy.github.io/lexis/lexis_demo.zip)
+  - [<i class="fas fa-file-pdf"></i>
+    Preview](https://jhelvy.github.io/lexis/lexis_demo.html) a live
+    demo.
+  - [View](https://jhelvy.github.io/lexis/lexis_demo.pdf) the live demo
+    slides as a pdf.
+  - [Download](https://jhelvy.github.io/lexis/lexis_demo.zip) the files
+    to create the demo.
 
 <img src="images/lexis_demo.gif" width=660>
 
@@ -45,7 +50,7 @@ slides](https://jhelvy.github.io/lexis/lexis_demo.html).
     author: "Author"
     output:
       xaringan::moon_reader:
-        css: ['default', 'https://jhelvy.github.io/lexis/lexis.css']
+        css: 'https://jhelvy.github.io/lexis/lexis.css'
         lib_dir: libs
         nature:
           highlightStyle: github
@@ -55,7 +60,7 @@ slides](https://jhelvy.github.io/lexis/lexis_demo.html).
         seal: false
     ---
 
-### Why “λέξις”?
+### What does “λέξις” mean?
 
 When communicating an idea to others, there is a fundamental difference
 between the *content* of what is be communicated and the *form* of how
@@ -67,4 +72,4 @@ and delivery of a speech (see also [this
 article](http://rhetoric.byu.edu/Encompassing%20Terms/Content%20and%20Form.htm)
 on content versus form). Since the entire purpose of making a xaringan
 theme is to customize the *form* of how content is delivered, “lexis”
-seemed appropriate.
+seemed like an appropriate name.

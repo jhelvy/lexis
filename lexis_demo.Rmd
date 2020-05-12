@@ -4,14 +4,14 @@ subtitle: "a xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: 'lexis.css'
+    css: 'https://jhelvy.github.io/lexis/lexis.css'
     lib_dir: libs
     nature:
-      highlightStyle: tango
+      highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-    seal: false
+    seal: false 
 ---
 
 ```{r setup, include=FALSE}
@@ -34,7 +34,7 @@ today <- format(Sys.Date(), format="%B %d %Y")
 ```{r xaringan-tile-view, echo=FALSE}
 # Enables the ability to show all slides in a tile overview by pressing "o"
 # devtools::install_github("gadenbuie/xaringanExtra")
-# xaringanExtra::use_tile_view()
+xaringanExtra::use_tile_view()
 ```
 
 layout: true
@@ -58,6 +58,10 @@ class: title-slide, center, middle, inverse
 Written: `r dateWritten`
 
 Updated: `r today`
+
+.footer-large[.right[.fira[
+<br><br><br><br><br>[What does "λέξις" mean](https://jhelvy.github.io/lexis/index.html)
+]]]
 
 ---
 
@@ -123,27 +127,57 @@ chunk_input
 ]
 
 ---
+
+## Colors!
+
 .leftcol40[
-# Colors!
-```
-## .red[text]
-## .orange[text]
-## .yellow[text]
-## .green[text]
-## .blue[text]
-## .purple[text]
-## .black[text]
-```
+`.red[text]`
+
+`.orange[text]`
+
+`.yellow[text]`
+
+`.green[text]`
+
+`.blue[text]`
+
+`.purple[text]`
+
+`.black[text]`
 ]
 .rightcol45[
-## .red[text]
-## .orange[text]
-## .yellow[text]
-## .green[text]
-## .blue[text]
-## .purple[text]
-## .black[text]
+**.red[text]**
+
+**.orange[text]**
+
+**.yellow[text]**
+
+**.green[text]**
+
+**.blue[text]**
+
+**.purple[text]**
+
+**.black[text]**
 ]
+
+---
+
+# Split into four corners
+
+.wrapper[
+.top-left[
+Here's some text in the top-left corner
+]
+.top-right[
+Here's some text in the top-right corner
+]
+.bottom-left[
+Here's some text in the bottom-left corner
+]
+.bottom-right[
+Here's some text in the bottom-right corner
+]]
 
 ---
 
@@ -261,36 +295,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ]
 
 ---
-
-<center>
-.wrapper[
-.top-left[
-Here's some text in the top-left corner
-]
-.top-right[
-Here's some text in the top-right corner
-]
-.bottom-left[
-Here's some text in the bottom-left corner
-]
-.bottom-right[
-Here's some text in the bottom-right corner
-]
-]
-</center>
-
----
 class: center
 background-image: url("images/blue_ridge_mountains.jpg")
 
 # .fancy[Full image background]
 
-.left[
+.leftcol60[.left[
 ```{r, eval=FALSE}
 class: center
 background-image: url("images/blue_ridge_mountains.jpg")
 ```
-]
+]]
 
 ---
 
@@ -502,9 +517,9 @@ class: center, middle, inverse, no-slide-number
 
 .footer-large[
 .right[
-[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)
-[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)
-[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)
-[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)
-[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
+[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)  
+[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)  
 ]]
