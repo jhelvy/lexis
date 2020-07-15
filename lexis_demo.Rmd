@@ -78,11 +78,9 @@ Updated: `r today`
 
 ]
 .rightcol[
-Regular text
+Regular, **Bold**, & _Italics_ text
 
-_Italics text_
-
-**Bold text**
+.fancy[Fancy text]
 
 [external link](https://github.com/jhelvy/lexis)
 
@@ -110,11 +108,9 @@ class: inverse
 
 ]
 .rightcol[
-Regular text
+Regular, **Bold**, & _Italics_ text
 
-_Italics text_
-
-**Bold text**
+.fancy[Fancy text]
 
 [external link](https://github.com/jhelvy/lexis)
 
@@ -520,6 +516,6 @@ class: center, middle, inverse, no-slide-number
 [`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
 [`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
 [`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
-[`r fa(name = "link", fill = "white")` jhelvy.com](https://www.jhelvy.com)  
+[`r fa(name = "link", fill = "white")` www.jhelvy.com](https://www.jhelvy.com)  
 [`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)  
 ]]

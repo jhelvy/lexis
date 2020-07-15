@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Overpass);
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed);
-@import url('https://fonts.googleapis.com/css?family=Cormorant+Upright:600');
+@import url('https://fonts.googleapis.com/css?family=Lobster+Two:ital');
 
 /* ----- DEFAULT STYLING ----- */
 /* From here: https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
@@ -102,7 +102,7 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   --font-body:    "Overpass", sans-serif;
   --font-header:  "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --font-mono:    SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
-  --font-fancy:   "Cormorant Upright",serif;
+  --font-fancy:   "Lobster Two",serif;
 }
 
 /* Background glow color around main slide container */
@@ -218,7 +218,8 @@ li {
 
 .fancy{
   font-family: var(--font-fancy);
-  font-weight: 600;
+  font-weight: 400;
+  font-style: italic;
 }
 
 /* Additional font sizes */
