@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Overpass);
-@import url(https://fonts.googleapis.com/css?family=Fira+Sans+Condensed);
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two:ital');
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Lobster+Two:ital,wght@1,400;1,700&family=Overpass:ital,wght@0,300;0,900;1,300;1,900&display=swap" rel="stylesheet">
 
 /* ----- DEFAULT STYLING ----- */
 /* From here: https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
@@ -136,17 +134,18 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 
 body {
   font-family: var(--font-body);
-  color: #333333;
+  font-weight: 300;
+  color: #000;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-header);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.1;
 }
 
 h1, h2, h3, {
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -326,7 +325,7 @@ li {
 
 /* Color of inline code, i.e. `code` */
 .remark-inline-code {
-  color: var(--color-gray);
+  color: #008080;
   background-color: transparent;
   border-radius: 5px; /* Rounded edges */
 }
