@@ -161,6 +161,14 @@ chunk_input
 
 # Split into four corners
 
+<!-- Adjust grid size...use 100 if no header -->
+<style>
+.wrapper {
+  width: 70vw;
+  height: 60vh;
+}
+</style>
+
 .wrapper[
 .top-left[
 Here's some text in the top-left corner
