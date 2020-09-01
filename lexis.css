@@ -134,7 +134,13 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 
 body {
   font-family: var(--font-body);
-  font-weight: 300;
+  font-weight: 400;
+  color: #000;
+}
+
+strong {
+  font-family: var(--font-body);
+  font-weight: 900;
   color: #000;
 }
 
