@@ -505,8 +505,8 @@ img {
 
 .wrapper {
   display: grid;
-  width: 100vw;
-  height: 100vh;
+  width: 60vw;
+  height: 90vh;
   place-items: center;
   place-content: center;
   grid-template-columns: repeat(4, 1fr);
