@@ -1,4 +1,4 @@
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,300;0,700;1,300;1,700&family=Lobster+Two:ital,wght@1,400;1,700&family=Overpass:ital,wght@0,300;0,900;1,300;1,900&display=swap" rel="stylesheet">
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
 
 /* ----- DEFAULT STYLING ----- */
 /* From here: https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
@@ -97,10 +97,10 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   --color-black:  #1A1917;
   --color-gray-light: #EAE9EA;
   --color-gray:   #696969;
-  --font-body:    "Overpass", sans-serif;
-  --font-header:  "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-mono:    SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
-  --font-fancy:   "Lobster Two",serif;
+  --font-body:   "Overpass", sans-serif;
+  --font-header: "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --font-mono:   SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
+  --font-fancy:  'Lobster Two',cursive;
 }
 
 /* Background glow color around main slide container */
@@ -151,6 +151,12 @@ h1, h2, h3, {
 
 .fira {
   font-family: var(--font-header);
+}
+
+.fancy{
+  font-family: var(--font-fancy);
+  font-weight: 400;
+  font-style: italic;
 }
 
 .remark-slide-content h1 {
@@ -213,12 +219,6 @@ li {
 
 .remark-code, .remark-inline-code {
   font-family: var(--font-mono);
-}
-
-.fancy{
-  font-family: var(--font-fancy);
-  font-weight: 400;
-  font-style: italic;
 }
 
 /* Additional font sizes */
