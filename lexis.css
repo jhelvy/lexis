@@ -18,11 +18,11 @@ a, a > code {
 }
 .inverse {
   background-color: #272822;
-  color: #d6d6d6;
+  color: #fff;
   text-shadow: 0 0 20px #333;
 }
 .inverse h1, .inverse h2, .inverse h3 {
-  color: #f3f3f3;
+  color: #fff;
 }
 /* Two-column layout */
 .left-column {
@@ -142,6 +142,12 @@ strong {
   font-family: var(--font-body);
   font-weight: 900;
   color: #000;
+}
+
+.inverse strong {
+  font-family: var(--font-body);
+  font-weight: 900;
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
