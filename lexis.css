@@ -375,6 +375,7 @@ pre {
   max-width: 100%;
   overflow-x: auto;
   margin: 0.5em 0px;
+  white-space: pre-wrap; /* Wraps R output, https://github.com/yihui/xaringan/issues/225 */
 }
 
 /* Links */
