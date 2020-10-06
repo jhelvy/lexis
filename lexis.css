@@ -233,6 +233,10 @@ li {
   font-family: var(--font-mono);
 }
 
+.remark-code {
+  font-size: 22px;
+}
+
 /* Additional font sizes */
 .large {
   font-size: 160%;

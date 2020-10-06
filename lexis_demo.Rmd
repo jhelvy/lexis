@@ -4,7 +4,7 @@ subtitle: "a xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: 'https://jhelvy.github.io/lexis/lexis.css'
+    css: 'lexis.css'
     lib_dir: libs
     nature:
       highlightStyle: github

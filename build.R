@@ -1,24 +1,9 @@
-library(zip)
-library(magick)
-library(magrittr)
-library(here)
+# remotes::install_github('jhelvy/xaringanBuilder')
 
-# Render the demo slides
-rmarkdown::render(input = here::here('lexis_demo.Rmd'))
-
-# Create pdf version of the demo slides
-pagedown::chrome_print(
-    input  = here::here('lexis_demo.html'),
-    output = here::here('lexis_demo.pdf'))
-
-# Create gif of demo slides
-pdf <- image_read(here::here('lexis_demo.pdf'), density = '72x72')
-pngs <- list()
-for (i in 1:length(pdf)) { pngs[[i]] <- image_convert(pdf[i], 'png') }
-pngs %>%
-    image_join() %>% # joins image
-    image_animate(fps = 1) %>% # animates, can opt for number of loops
-    image_write(here::here('images', 'lexis_demo.gif')) # write to current dir
+# Build the demo slides for html, pdf, and gif outputs
+xaringanBuilder::build_all(
+    input = here::here('lexis_demo.Rmd'),
+    include = c('html', 'pdf', 'gif'))
 
 # Create zip file of lexis demo
 zip::zip('lexis_demo.zip', c(
