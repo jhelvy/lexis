@@ -9,16 +9,16 @@
 
 Written: May 04 2020
 
-Updated: October 06 2020
+Updated: November 30 2020
 
 λέξις (lexis) is a theme for the [xaringan R
 package](https://github.com/yihui/xaringan) for making slides. It has a
 light gray background with distinct coloring for code block inputs and
 outputs. The primary fonts are [Fira Sans
 Condensed](https://fonts.google.com/specimen/Fira+Sans+Condensed) for
-headers, [Overpass](https://fonts.google.com/specimen/Overpass) for body
-text, and [SFMono-Regular](https://developer.apple.com/fonts/) for mono
-text (i.e. code). The theme copies ideas from several other themes, most
+headers, [Inter](https://fonts.google.com/specimen/Inter) for body text,
+and [SFMono-Regular](https://developer.apple.com/fonts/) for mono text
+(i.e. code). The theme copies ideas from several other themes, most
 notably from [Allison Hill](https://alison.rbind.io/)’s xaringan styling
 [this
 workshop](https://github.com/rstudio-education/arm-workshop-rsc2019).

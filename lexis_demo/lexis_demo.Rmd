@@ -462,7 +462,7 @@ This code produces the image on the right:
 ] #<<
 ```
 ]
-.rightcol40[.lil[
+.rightcol40[.thumbnail[
 <br><br><br><br>
 <center>
 <img src="images/blue_ridge_sunset.jpg">
@@ -519,9 +519,9 @@ class: center, middle, inverse, no-slide-number
 
 .footer-large[
 .right[
-[@johnhelveston `r fa(name = "twitter", fill = "white")`](http://twitter.com/johnhelveston)
-[@jhelvy `r fa(name = "github", fill = "white")`](http://github.com/jhelvy)
-[@jhelvy `r fa(name = "weixin", fill = "white")`](http://www.box.jhelvy.com/docs/jhelvy.png)
-[jhelvy.com `r fa(name = "link", fill = "white")`](https://www.jhelvy.com)
+[@johnhelveston `r fa(name = "twitter", fill = "white")`](http://twitter.com/johnhelveston)<br>
+[@jhelvy `r fa(name = "github", fill = "white")`](http://github.com/jhelvy)<br>
+[@jhelvy `r fa(name = "weixin", fill = "white")`](http://www.box.jhelvy.com/docs/jhelvy.png)<br>
+[jhelvy.com `r fa(name = "link", fill = "white")`](https://www.jhelvy.com)<br>
 [jph@gwu.edu `r fa(name = "paper-plane", fill = "white")`](mailto:jph@gwu.edu)
 ]]
