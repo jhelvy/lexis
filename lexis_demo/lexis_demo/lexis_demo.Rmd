@@ -11,7 +11,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "16:9"
-    seal: false
+    seal: false 
 ---
 
 ```{r setup, include=FALSE}
@@ -51,10 +51,8 @@ https://github.com/jhelvy/lexis
 name: title-slide
 class: title-slide, center, middle, inverse
 
-# λέξις
-#.fancy[a xaringan theme]
+# λέξις: a xaringan theme
 
-<br>
 .large[by John Paul Helveston]
 
 Written: `r dateWritten`
@@ -67,7 +65,7 @@ Updated: `r today`
 
 ---
 
-# .center[Text styling]
+# .center[Styling]
 
 .leftcol[
 # Header level 1
@@ -78,33 +76,26 @@ Updated: `r today`
 
 #### Header level 4
 
-##### Header level 5
-
-###### Header level 6
-
 ]
 .rightcol[
-Regular
-
-_Italics_
-
-**Bold**
-
-***Bold italics***
-
-~~Strikethrough~~
+Regular, **Bold**, & _Italics_ text
 
 .fancy[Fancy text]
 
-[external link](https://github.com/jhelvy/lexis)<br>
+[external link](https://github.com/jhelvy/lexis)
 
 `Inline code`
+
+```{r}
+chunk_input <- "chunk_output"
+chunk_input
+```
 ]
 
 ---
 class: inverse
 
-# .center[Inverse text styling]
+# .center[Inverse styling]
 
 .leftcol[
 # Header level 1
@@ -115,32 +106,25 @@ class: inverse
 
 #### Header level 4
 
-##### Header level 5
-
-###### Header level 6
-
 ]
 .rightcol[
-Regular
-
-_Italics_
-
-**Bold**
-
-***Bold italics***
-
-~~Strikethrough~~
+Regular, **Bold**, & _Italics_ text
 
 .fancy[Fancy text]
 
-[external link](https://github.com/jhelvy/lexis)<br>
+[external link](https://github.com/jhelvy/lexis)
 
 `Inline code`
+
+```{r}
+chunk_input <- "chunk_output"
+chunk_input
+```
 ]
 
 ---
 
-## .center[Colors!]
+## Colors!
 
 .leftcol40[
 `.red[text]`
@@ -173,29 +157,31 @@ _Italics_
 **.black[text]**
 ]
 
-
 ---
 
-# .center[Github code chunk highlighting]
+# Split into four corners
 
-.leftcol80[
-```{r, error=TRUE}
-# function args are keywords c; function names are keywords d
-foo <- function(arg1 = 100, arg2 = "character string") {
-  if (TRUE) {
-    x = NULL  # if, function, NULL are keywords a
-    for (i in 1:10) x = c(x, mean(3 * rnorm(100) + 1))
-  }
+<!-- Adjust grid size...use 100 if no header -->
+<style>
+.wrapper {
+  width: 70vw;
+  height: 60vh;
 }
+</style>
 
-1 + "a"  # error
-```
+.wrapper[
+.top-left[
+Here's some text in the top-left corner
 ]
-
----
-class: inverse, middle, center
-
-# Column options
+.top-right[
+Here's some text in the top-right corner
+]
+.bottom-left[
+Here's some text in the bottom-left corner
+]
+.bottom-right[
+Here's some text in the bottom-right corner
+]]
 
 ---
 
@@ -222,12 +208,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ## .center[Two equal columns]
 
 .leftcol[
-`.leftcol[]` or `.pull-left[]`
+`.cols2[]` or `.leftcol[]`
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ]
 .rightcol[
-`.rightcol[]` or `.pull-right[]`
+`.cols2[]` or `.rightcol[]`
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 ]
@@ -279,7 +265,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 ---
 
-## .center[...other two-column split options]
+## .center[Supported two-column split percentages]
 
 .leftcol[
 50-50: `.leftcol[] .rightcol[]`
@@ -318,23 +304,10 @@ background-image: url("images/blue_ridge_mountains.jpg")
 
 # .fancy[Full image background]
 
-<br><br><br>
-.leftcol80[.left[
+.leftcol60[.left[
 ```{r, eval=FALSE}
-background-image: url("images/blue_ridge_mountains.jpg")
-```
-]]
-
----
 class: center
-background-color: #909099
-
-# .fancy[.white[Change background color]]
-
-<br><br><br>
-.leftcol40[.left[
-```{r, eval=FALSE}
-background-color: #909099
+background-image: url("images/blue_ridge_mountains.jpg")
 ```
 ]]
 
@@ -345,11 +318,15 @@ background-color: #909099
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ```
 ]
 .rightcol40[
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]
 
 ---
@@ -360,45 +337,57 @@ This code produces the image on the right:
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .noborder[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.noborder[
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
 
-## Or modify the border: `.borderthick[]`
+# Or modify the border: `.borderthick[]`
 
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .borderthick[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.borderthick[
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
 class: inverse
 
-## Or modify the border: `.whiteborder[]`
+# Or modify the border: `.whiteborder[]`
 
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .whiteborder[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.whiteborder[
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
@@ -410,62 +399,75 @@ class: inverse
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .whiteborderthick[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.whiteborderthick[
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
 
-# Make a polaroid image: `.polaroid[]`
+# Change the image look: `.polaroid[]`
 
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .polaroid[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.polaroid[
+<center>
 <img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
 
-# Make a circle image: `.circle[]`
+# Change the image look: `.circle[]`
 
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
 .circle[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.circle[
+<center>
 <img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ]]
 
 ---
 
-# Make a thumbnail image: `.thumbnail[]`
+# Change the image look: `.lil[]`
 
 .leftcol60[
 This code produces the image on the right:
 ```{r, eval=FALSE}
-.thumbnail[ #<<
-<img src="images/blue_ridge_sunset.jpg">
+.lil[ #<<
+<center>
+<img src="images/blue_ridge_sunset.jpg" width="400">
+</center>
 ] #<<
 ```
 ]
 .rightcol40[.lil[
-<br><br><br><br>
 <center>
-<img src="images/blue_ridge_sunset.jpg">
+<img src="images/blue_ridge_sunset.jpg" width="400">
 </center>
 ]]
 
@@ -519,9 +521,9 @@ class: center, middle, inverse, no-slide-number
 
 .footer-large[
 .right[
-[@johnhelveston `r fa(name = "twitter", fill = "white")`](http://twitter.com/johnhelveston)
-[@jhelvy `r fa(name = "github", fill = "white")`](http://github.com/jhelvy)
-[@jhelvy `r fa(name = "weixin", fill = "white")`](http://www.box.jhelvy.com/docs/jhelvy.png)
-[jhelvy.com `r fa(name = "link", fill = "white")`](https://www.jhelvy.com)
-[jph@gwu.edu `r fa(name = "paper-plane", fill = "white")`](mailto:jph@gwu.edu)
+[`r fa(name = "twitter", fill = "white")` @johnhelveston](http://twitter.com/johnhelveston)  
+[`r fa(name = "github", fill = "white")` @jhelvy](http://github.com/jhelvy)  
+[`r fa(name = "weixin", fill = "white")` @jhelvy](http://www.box.jhelvy.com/docs/jhelvy.png)  
+[`r fa(name = "link", fill = "white")` www.jhelvy.com](https://www.jhelvy.com)  
+[`r fa(name = "paper-plane", fill = "white")` jph@gwu.edu](mailto:jph@gwu.edu)  
 ]]

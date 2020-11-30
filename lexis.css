@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
 /* ----- DEFAULT STYLING ----- */
 /* From here: https://github.com/yihui/xaringan/blob/master/inst/rmarkdown/templates/xaringan/resources/default.css */
@@ -92,16 +93,19 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
   --color-orange: #fa7b3c;
   --color-yellow: #EFB73E;
   --color-green:  #38B44A;
+  --color-dark-green: #2c8475;
   --color-blue:   #007bff;
   --color-purple: #772953;
   --color-black:  #1A1917;
   --color-gray-light: #EAE9EA;
   --color-gray:   #696969;
-  --font-body:   "Overpass", sans-serif;
+  --color-tan:   #d9d9d9;
+  --font-body:   inter,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
   --font-header: "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
   --font-mono:   SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
   --font-fancy:  'Lobster Two',cursive;
 }
+
 
 /* Background glow color around main slide container */
 .remark-slide-scaler {
@@ -341,7 +345,7 @@ li {
 
 /* Color of inline code, i.e. `code` */
 .remark-inline-code {
-  color: #008080;
+  color: var(--color-dark-green);
   background-color: transparent;
   border-radius: 5px; /* Rounded edges */
 }
@@ -401,12 +405,12 @@ a > code {
 }
 
 .inverse a, .inverse a:visited {
-  color: var(--color-white);
+  color: var(--color-dark-green);
   text-decoration: underline;
 }
 
 .inverse a:hover, a:focus {
-  color: var(--color-blue);
+  color: var(--color-dark-green);
 }
 
 /* Footer */
@@ -499,7 +503,7 @@ img {
   border-radius:50%;
 }
 
-.lil img {
+.thumbnail img {
   width: 15%;
   display: block;
   margin-left: auto;
@@ -679,7 +683,7 @@ img {
 }
 
 .remark-slide thead, .remark-slide tfoot, .remark-slide tr:nth-child(even) {
-  background: #d9d9d9;
+  background: var(--color-tan);
 }
 
 .remark-slide .inverse thead, .remark-slide .inverse tfoot, .remark-slide .inverse tr:nth-child(even) {
