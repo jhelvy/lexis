@@ -4,7 +4,7 @@ subtitle: "a xaringan theme"
 author: "John Helveston"
 output:
   xaringan::moon_reader:
-    css: 'https://jhelvy.github.io/lexis/lexis.css'
+    css: ["default", "css/lexis.css", "css/lexis-fonts.css"]
     lib_dir: libs
     nature:
       highlightStyle: github
@@ -21,12 +21,14 @@ library(fontawesome) # from github: https://github.com/rstudio/fontawesome
 options(
     htmltools.dir.version = FALSE,
     knitr.table.format = "html",
-    knitr.kable.NA = '')
+    knitr.kable.NA = ''
+)
 knitr::opts_chunk$set(
     warning = FALSE,
     message = FALSE,
-    # Better figure resolution
-    fig.retina = 3)
+    comment = "#>",
+    fig.retina = 3 # Better figure resolution
+)
 dateWritten <- format(as.Date('2020-05-04'), format="%B %d %Y")
 today <- format(Sys.Date(), format="%B %d %Y")
 ```
