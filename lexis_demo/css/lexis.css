@@ -7,24 +7,20 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 /* Colors */
 
 :root {
-  --color-white:  #fff;
-  --color-red:    #E74A2F;
-  --color-orange: #fa7b3c;
-  --color-yellow: #EFB73E;
-  --color-green:  #38B44A;
+  --color-white:      #FFFFFF;
+  --color-red:        #E74A2F;
+  --color-orange:     #fa7b3c;
+  --color-yellow:     #EFB73E;
+  --color-green:      #38B44A;
   --color-dark-green: #2c8475;
-  --color-blue:   #007bff;
-  --color-purple: #772953;
-  --color-black:  #1A1917;
+  --color-blue:       #007bff;
+  --color-dodgerblue: #1E90FF;
+  --color-purple:     #772953;
+  --color-black:      #1A1917;
   --color-gray-light: #EAE9EA;
-  --color-gray:   #696969;
-  --color-tan:   #d9d9d9;
-  --font-body:   inter,-apple-system,BlinkMacSystemFont,roboto,segoe ui,Helvetica,Arial,sans-serif;
-  --font-header: "Fira Sans Condensed",Tahoma,"Helvetica Neue",Helvetica,Arial,sans-serif;
-  --font-mono:   SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono",monospace;
-  --font-fancy:  'Lobster Two',cursive;
+  --color-gray:       #696969;
+  --color-tan:        #d9d9d9;
 }
-
 
 /* Background glow color around main slide container */
 .remark-slide-scaler {
@@ -42,7 +38,6 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 
 .remark-slide-content {
   background-color: var(--color-gray-light); /* Background color of slide */
-  font-size: 20pt;
   padding-top: 20px;
   padding-left: 60px;
   padding-right: 60px;
@@ -56,22 +51,6 @@ https://github.com/rstudio-education/arm-workshop-rsc2019
 li {
   margin-block-start: 0.5em;
   margin-block-end: 0.5em;
-}
-
-.slimtitle {
-  font-family: var(--font-header);
-  font-weight: 500;
-  font-size: 55px;
-  margin-block-start: 0em;
-  margin-block-end: 0.1em;
-}
-
-.remark-code, .remark-inline-code {
-  font-family: var(--font-mono);
-}
-
-.remark-code {
-  font-size: 22px;
 }
 
 /* In line code */
@@ -110,6 +89,7 @@ li {
 
 .inverse {
   background-color: var(--color-black);
+  color: var(--color-white);
   text-shadow: 0 0 0;
 }
 
@@ -143,12 +123,12 @@ a > code {
 }
 
 .inverse a, .inverse a:visited {
-  color: var(--color-dark-green);
+  color: var(--color-dodgerblue );
   text-decoration: underline;
 }
 
 .inverse a:hover, a:focus {
-  color: var(--color-dark-green);
+  color: var(--color-purple);
 }
 
 /* Footer */
