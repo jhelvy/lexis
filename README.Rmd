@@ -8,5 +8,5 @@ output:
 
 # λέξις: a xaringan theme
 
-```{r child = '_description.Rmd'}
+```{r child = 'description.Rmd'}
 ```
