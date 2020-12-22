@@ -4,15 +4,39 @@ output:
   html_document:
     theme: united
     highlight: tango
-    css: ["lexis_demo/css/lexis.css", "lexis_demo/css/lexis-fonts.css"]
+    css:
+      - lexis-theme/css/lexis.css
+      - lexis-theme/css/lexis-fonts.css
 ---
 
-```{r setup, include=FALSE}
-library(knitr)
+```{r setup, include = FALSE}
+library(fontawesome)
 knitr::opts_chunk$set(
-    warning = FALSE,
-    message = FALSE)
+  collapse = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "#>"
+)
+IS_README <- TRUE
+dateWritten <- format(as.Date('2020-05-04'), format="%B %d %Y")
+today <- format(Sys.Date(), format="%B %d %Y")
 ```
+
+<style>
+.button {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
 
 <!-- Styling to insert the little github logo in the corner, from here: -->
 <!-- https://github.com/tholman/github-corners -->
@@ -21,3 +45,15 @@ knitr::opts_chunk$set(
 
 ```{r child = 'description.Rmd'}
 ```
+
+### Demo
+
+```{r lexi-demo, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://jhelvy.github.io/lexis/lexis-theme/demo-16-9.html", ratio = "16:9")
+```
+
+<a href="#" class="button">`r fa("external-link-square-alt", fill = "#007bff")` Download the demo slides as a PDF</a>
+
+```{r child = 'footer.Rmd'}
+```
+

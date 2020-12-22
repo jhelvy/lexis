@@ -1,0 +1,9 @@
+### What does "λέξις" mean?
+
+When communicating an idea to others, there is a fundamental difference between the _content_ of what is be communicated and the _form_ of how it is communicated. Aristotle phrased this as the difference between [λόγος (logos)](https://en.wikipedia.org/wiki/Logos), the logical content of a speech, and [λέξις (lexis)](https://en.wikipedia.org/wiki/Lexis_(Aristotle)), the style and delivery of a speech (see also [this article](http://rhetoric.byu.edu/Encompassing%20Terms/Content%20and%20Form.htm) on content versus form). Since the entire purpose of making a xaringan theme is to customize the _form_ of how content is delivered, "lexis" seemed like an appropriate name.
+
+-----
+
+### License
+
+![](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)  This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).

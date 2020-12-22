@@ -6,7 +6,38 @@ output:
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+```{r setup, include = FALSE}
+library(fontawesome)
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  echo = FALSE,
+  message = FALSE,
+  warning = FALSE,
+  comment = "#>"
+)
+IS_README <- TRUE
+dateWritten <- format(as.Date('2020-05-04'), format="%B %d %Y")
+today <- format(Sys.Date(), format="%B %d %Y")
+```
+
 # λέξις: a xaringan theme
 
 ```{r child = 'description.Rmd'}
+```
+
+### Demo
+
+- [`r fa("external-link-square-alt", fill = "#007bff")` Preview](https://jhelvy.github.io/lexis/lexis-theme/lexis-demo-16-9.html){target="_blank"} a live demo.
+- [`r fa("external-link-square-alt", fill = "#007bff")` View](https://jhelvy.github.io/lexis/lexis-theme/lexis-demo-16-9.pdf){target="_blank"} the live demo slides as a pdf.
+- [`r fa("download", fill = "#007bff")` Download](https://jhelvy.github.io/lexis/lexis-theme/lexis-theme.zip){target="_blank"} the files to create the demo.
+
+<img src="lexis-theme/lexis-demo-16-9.gif" width=660>
+
+### How can I use this theme?
+
+The easiest way to use this theme is to download and use the demo template:
+
+[`r fa("download", fill = "#007bff")` Download](https://jhelvy.github.io/lexis/lexis-theme/lexis-theme.zip){target="_blank"}
+
+```{r child = 'footer.Rmd'}
 ```
