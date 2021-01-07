@@ -7,7 +7,7 @@
 
 Written: May 04 2020
 
-Updated: December 22 2020
+Updated: January 07 2021
 
 λέξις (lexis) is a theme for the [xaringan R
 package](https://github.com/yihui/xaringan) for making slides. It has a

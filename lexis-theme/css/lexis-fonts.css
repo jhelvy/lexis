@@ -41,9 +41,9 @@ h1, h2, h3, {
 blockquote {
   border-left: solid 5px lightgray;
   padding-left: 1em;
-  border: 3px solid var(--color-darkgreen);
+  border: 3px solid var(--color-blue);
   border-radius: 10px; /* Rounded edges */
-  background-color: #e8fdf5;
+  background-color: var(--color-lightblue);
   font-family: var(--font-header);
   box-shadow: 4px 4px 8px 0 rgba(0,0,0,.2);
 }
