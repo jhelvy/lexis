@@ -266,6 +266,13 @@ img {
   margin-left: 5px;
   margin-right: 5px;
 }
+.cols4 {
+  width: 24%;
+  float: left;
+  text-align: left;
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .leftcol {
   float: left;
   width: 49%;
