@@ -89,7 +89,7 @@ a > code {
 
 /* Background color for highlighted code */
 .remark-code-line-highlighted {
-  background-color: rgb(206, 233, 255);  /*light blue*/
+  background-color: rgba(206, 233, 255, 0.5);  /*light blue*/
 }
 
 /* Color of inline code, i.e. `code` */
